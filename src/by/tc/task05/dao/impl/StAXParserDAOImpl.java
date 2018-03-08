@@ -21,7 +21,7 @@ public class StAXParserDAOImpl implements ParserDAO {
 		XMLInputFactory inputFactory = XMLInputFactory.newInstance();
 		List<Book> library = new ArrayList<Book>();
 		try {
-			InputStream input = new FileInputStream("main.resources.books.xml");
+			InputStream input = new FileInputStream("resources/books.xml");
 			XMLStreamReader reader = inputFactory.createXMLStreamReader(input);
 			BookStAXHandler handler = new BookStAXHandler();
 			library = handler.process(reader);

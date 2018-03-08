@@ -34,7 +34,7 @@ public class Controller extends HttpServlet {
         
         ServiceFactory factory = ServiceFactory.getInstance();
         ParserService service = factory.getService();
-        service.setParserName(request.getParameter("parserName"));
+        service.setParserName("SAX");
         
         List<Book> books = service.getBooksData(page);
         int numberOfBooks = service.getNumberOfBooks();

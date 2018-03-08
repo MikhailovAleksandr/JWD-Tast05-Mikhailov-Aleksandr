@@ -22,7 +22,7 @@ public class SAXParserDAOImpl implements ParserDAO {
 		XMLReader reader = saxParser.getXMLReader();
 		BookSAXHandler handler = new BookSAXHandler();
 		reader.setContentHandler(handler);
-		reader.parse(new InputSource("main.resources.books.xml"));
+		reader.parse(new InputSource("resources/books/xml"));
 		
 		reader.setFeature("http://xml.org/sax/features/validation", true);
 		reader.setFeature("http://xml.org/sax/features/namespace", true);

@@ -22,7 +22,7 @@ public class DOMParserDAOImpl implements ParserDAO {
 		
 		DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
 		DocumentBuilder builder = factory.newDocumentBuilder();
-		Document document = builder.parse("main/resources/books.xml");
+		Document document = builder.parse("resources/books.xml");
 		
 		Element root = document.getDocumentElement();
 		
