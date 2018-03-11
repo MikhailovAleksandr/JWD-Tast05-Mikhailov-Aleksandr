@@ -44,7 +44,7 @@ public class Controller extends HttpServlet {
         request.setAttribute("bookList", books);
         request.setAttribute("numberOfPages", numberOfPages);
         request.setAttribute("currentPage", page);
-        request.getRequestDispatcher("employee.jsp").forward(request, response);
+        request.getRequestDispatcher("jsp/Main.jsp").forward(request, response);
 		}catch (SAXException e) {
 			e.getMessage();
 		}catch (ParserConfigurationException e) {
