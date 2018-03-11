@@ -38,7 +38,9 @@ public class Controller extends HttpServlet {
         
         List<Book> books = service.getBooksData(page);
         int numberOfBooks = service.getNumberOfBooks();
+			
         int numberOfPages = (int) Math.ceil(numberOfBooks * 1.0 / recordsPerPage);
+			
         request.setAttribute("bookList", books);
         request.setAttribute("numberOfPages", numberOfPages);
         request.setAttribute("currentPage", page);
