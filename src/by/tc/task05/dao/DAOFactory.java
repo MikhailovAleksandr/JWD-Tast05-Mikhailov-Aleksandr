@@ -16,8 +16,8 @@ public class DAOFactory {
 		
 		switch(name.toUpperCase()) {
 		case "DOM": return new DOMParserDAOImpl();
-		case "STAX":return new SAXParserDAOImpl();
-		case "SAX":return new StAXParserDAOImpl();
+		case "STAX":return new StAXParserDAOImpl();
+		case "SAX":return new SAXParserDAOImpl();
 		default: return null;
 		}
 	}
